@@ -151,7 +151,7 @@ By chaining multiple middlewares together, you can perform multiple tasks on a s
 Chaining multiple middlewares together is a powerful way to handle different aspects of a request, it allows you to perform multiple tasks on a single request and make your code more modular and maintainable.
 
 ## How to use middlewares to perform tasks such as request validation, authentication, and access control.
-Yes, middlewares can be used to perform a variety of tasks, such as request validation, authentication, and access control.
+Middlewares can be used to perform a variety of tasks, such as request validation, authentication, and access control.
 
 Request validation is the process of checking that the request data is in the correct format and contains all the necessary information. A middleware function can be used to validate the request data before processing it, this can ensure that the data is present and in the correct format, and it can also prevent errors further down the line.
 
@@ -162,7 +162,7 @@ Access control is the process of determining whether a user is authorized to acc
 By using middlewares to perform tasks such as request validation, authentication, and access control, you can add functionality to your application and help in making it more modular and maintainable.
 
 ##   Best practices for organizing and structuring middlewares in an Express.js application.
-Yes, it's important to organize and structure middlewares in a way that makes sense for the flow of the application. This can be achieved by following a set of best practices:
+It's important to organize and structure middlewares in a way that makes sense for the flow of the application. This can be achieved by following a set of best practices:
 
 Group related middlewares together: By grouping related middlewares together, you can ensure that all the middlewares that are needed for a specific task are located in the same place. This makes it easier to understand the flow of the application and to make changes.
 

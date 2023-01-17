@@ -1,3 +1,13 @@
+- [Objectives](#objectives)
+  - [What middlewares are and how they work in the context of an Express.js application.](#what-middlewares-are-and-how-they-work-in-the-context-of-an-expressjs-application)
+  - [How to create and use custom middlewares in an Express.js application.](#how-to-create-and-use-custom-middlewares-in-an-expressjs-application)
+  - [How to use built-in middlewares such as `body-parser` and `cors` in an Express.js application.](#how-to-use-built-in-middlewares-such-as-body-parser-and-cors-in-an-expressjs-application)
+  - [How to use the `app.use()` and `app.all()` methods to apply middlewares to specific routes or path prefixes.](#how-to-use-the-appuse-and-appall-methods-to-apply-middlewares-to-specific-routes-or-path-prefixes)
+  - [How to chain multiple middlewares together to handle different aspects of a request.](#how-to-chain-multiple-middlewares-together-to-handle-different-aspects-of-a-request)
+  - [How to use middlewares to perform tasks such as request validation, authentication, and access control.](#how-to-use-middlewares-to-perform-tasks-such-as-request-validation-authentication-and-access-control)
+  - [Best practices for organizing and structuring middlewares in an Express.js application.](#best-practices-for-organizing-and-structuring-middlewares-in-an-expressjs-application)
+  - [How to use third-party middleware packages that are available on npm.](#how-to-use-third-party-middleware-packages-that-are-available-on-npm)
+
 # Objectives
 ##   What middlewares are and how they work in the context of an Express.js application.
 Middlewares are functions in Express.js that have access to the request and response objects, as well as the next function in the application's request-response cycle. These functions can perform a variety of tasks, such as parsing the request body, adding custom headers to the response, or even terminating the request-response cycle.

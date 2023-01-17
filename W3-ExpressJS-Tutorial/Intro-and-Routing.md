@@ -1,5 +1,20 @@
 <p>Express.js is a web framework for Node.js, a JavaScript runtime built on Chrome's V8 JavaScript engine. Express.js provides a set of features for web and mobile applications, it simplifies the task of building a web server and handling HTTP requests and responses. It is minimal, flexible, and unopinionated, which means that it doesn't force a particular structure or architecture on your application.</p><p>Express.js handles the low-level details of HTTP and allows you to focus on building the application's functionality. It provides a routing system that allows you to handle different URLs and HTTP methods, middleware functions that allow you to perform tasks such as request validation and authentication, and the ability to easily send responses to the client in various formats such as JSON and HTML.</p><p>Express.js is widely used in the Node.js community, it has a large and active user base, and a large number of third-party packages are available to add additional functionality to your application.</p>
 
+# TOC
+- [TOC](#toc)
+- [Objectives](#objectives)
+- [Routing](#routing)
+  - [How to define routes and map them to specific callback functions?](#how-to-define-routes-and-map-them-to-specific-callback-functions)
+  - [How to use route parameters to capture dynamic values from the URL?](#how-to-use-route-parameters-to-capture-dynamic-values-from-the-url)
+  - [How to use regular expressions to match specific patterns in the URL.](#how-to-use-regular-expressions-to-match-specific-patterns-in-the-url)
+  - [How to use query strings and the `req.query` object to access query parameters.](#how-to-use-query-strings-and-the-reqquery-object-to-access-query-parameters)
+  - [How to use the `req.params` object to access route parameters.](#how-to-use-the-reqparams-object-to-access-route-parameters)
+  - [How to use the `req.body` object to access the request payload for POST and PUT requests.](#how-to-use-the-reqbody-object-to-access-the-request-payload-for-post-and-put-requests)
+  - [How to use the `app.route()` method to chain route handlers for a specific route.](#how-to-use-the-approute-method-to-chain-route-handlers-for-a-specific-route)
+  - [How to use the `res.json()`, `res.send()`, and `res.render()` methods to respond to client requests.](#how-to-use-the-resjson-ressend-and-resrender-methods-to-respond-to-client-requests)
+  - [How to use `app.use()` method to handle requests with a specific path prefix.](#how-to-use-appuse-method-to-handle-requests-with-a-specific-path-prefix)
+  - [How to use the `app.all()` method to handle all types of HTTP requests for a specific route.](#how-to-use-the-appall-method-to-handle-all-types-of-http-requests-for-a-specific-route)
+
 # Objectives
 1.  Introduction to the Express.js framework and its features, such as routing and middleware.
 2.  A step-by-step guide on how to set up a basic Express.js application.

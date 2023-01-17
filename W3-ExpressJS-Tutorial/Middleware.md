@@ -22,7 +22,12 @@ For example, the following code defines a custom middleware function that adds a
 
 
 ```js
-function customMiddleware(req, res, next) {     res.set('X-Custom-Header', 'My header value');     next(); }
+function customMiddleware(req, res, next) {
+    res.set('X-Custom-Header', 'My header value');
+    next();
+}
+
+
 ```
 
 Once the middleware is defined, it can be added to the middleware stack using the `app.use()` or `app.all()` methods. For example, the following code adds the `customMiddleware` function to the middleware stack, so it will be invoked for all requests:
@@ -30,7 +35,7 @@ Once the middleware is defined, it can be added to the middleware stack using th
 
 
 ```js
-pp.use(customMiddleware)
+app.use(customMiddleware)
 ```
 
 You can also use `app.use()` or `app.all()` methods to apply the middleware to specific routes or path prefixes. For example, the following code applies the `customMiddleware` function only to requests starting with '/api':
@@ -53,7 +58,9 @@ The `body-parser` middleware is used to parse the request body and make it avail
 
 
 ```js
-const bodyParser = require('body-parser'); app.use(bodyParser.json());
+const bodyParser = require('body-parser');
+app.use(bodyParser.json());
+
 ```
 
 The `cors` middleware is used to handle Cross-Origin Resource Sharing (CORS) and allows for specific headers and methods to be set on the response for cross-origin requests. It allows the server to specify which origin(s) are allowed to interact with the server. For example, the following code uses `cors` to allow all origins to interact with the server:
@@ -61,7 +68,9 @@ The `cors` middleware is used to handle Cross-Origin Resource Sharing (CORS) and
 
 
 ```js
-const cors = require('cors'); app.use(cors())
+const cors = require('cors');
+app.use(cors());
+
 ```
 
 You can also use `cors` middleware to specify allowed origin, methods, headers, credentials and more.
@@ -81,7 +90,11 @@ The `app.use()` method is used to define middleware functions that will be invok
 
 
 ```js
-app.use('/api', (req, res, next) => {     console.log('API Request');     next(); })
+app.use('/api', (req, res, next) => {
+    console.log('API Request');
+    next();
+});
+
 ```
 
 The `app.all()` method is used to define a route handler that will be invoked for all types of HTTP requests made to a specific route, regardless of the HTTP method used. For example, the following code applies a middleware to all requests made to '/users':
@@ -89,7 +102,11 @@ The `app.all()` method is used to define a route handler that will be invoked fo
 
 
 ```js
-app.all('/users', (req, res, next) => {     console.log('Users Request');     next(); })
+app.all('/users', (req, res, next) => {
+    console.log('Users Request');
+    next();
+});
+
 ```
 
 It's important to note that, middlewares are executed in the order they are defined, so it's important to order them in a way that makes sense for the flow of the application.
@@ -112,10 +129,17 @@ For example, the following code chains two middleware functions together to auth
 
 
 ```js
-function authenticate(req, res, next) {     // authenticate user     
-next(); }  function validate(req, res, next) {     // validate request     
-next(); } 
-app.use('/api', authenticate, validate)
+function authenticate(req, res, next) {
+    // authenticate user
+    next();
+}
+
+function validate(req, res, next) {
+    // validate request
+    next();
+}
+app.use('/api', authenticate, validate);
+
 ```
 
 You can chain as many middleware functions as you need to handle different aspects of a request. It's important to note that middleware functions are executed in the order they are defined, so it's important to order them in a way that makes sense for the flow of the application.

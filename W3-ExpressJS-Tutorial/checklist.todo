@@ -10,7 +10,7 @@
   - How to use app.use() method to handle requests with a specific path prefix.
   - How to use the app.all() method to handle all types of HTTP requests for a specific route. 
 
-- Middleware Functins
+- Middleware Functions
   - What middlewares are and how they work in the context of an Express.js application. 
   - How to create and use custom middlewares in an Express.js application.
   - How to use built-in middlewares such as body-parser and cors in an Express.js application.

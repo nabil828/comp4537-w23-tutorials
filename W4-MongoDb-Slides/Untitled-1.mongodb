@@ -1,0 +1,6 @@
+use("test")
+
+
+
+// db.unicorns.deleteOne({name: 'Leia'})
+db.unicorns.find().count()

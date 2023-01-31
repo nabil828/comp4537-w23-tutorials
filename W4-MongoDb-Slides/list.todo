@@ -1,0 +1,14 @@
+- MongoDB CRUD Operations
+  - Insert Documents 
+  - Query Documents 
+    - Project Fields to Return from Query 
+    - Query on Embedded/Nested Documents 
+    - Query an Array 
+    - Query an Array of Embedded Documents 
+  - Update Documents 
+    - updateOne 
+    - updateMany 
+    - replaceOne 
+  - Delete Documents 
+    - deleteMany() 
+    - deleteOne() 
